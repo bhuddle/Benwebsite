@@ -1087,9 +1087,6 @@ body {
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../img/CircuitFull.png");
-    background-repeat: no-repeat;
-    background-position: left;
 }
 input,
 button,
@@ -6758,3 +6755,47 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+#cf {
+    position: relative;
+    height: 281px;
+    width: 450px;
+    margin: 20px auto;
+}
+
+#cf img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#cf img {
+    animation-name: fadein;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-direction: normal;
+}
+
+#cf img:nth-of-type(1) {
+    animation-delay: 4s;
+}
+
+#cf img:nth-of-type(2) {
+    animation-delay: 2s;
+}
+
+#cf img:nth-of-type(3) {
+    animation-delay: 0s;
+}
+
+@keyframes fadein {
+    0% {opacity: 1; }
+    25% {opacity: 1; }
+    50% {opacity: 0; }
+    75% {opacity: 0; }
+    100% {opacity: 0; }
+}
