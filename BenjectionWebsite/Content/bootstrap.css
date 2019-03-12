@@ -4589,8 +4589,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+    background-color: #31708f;
+    border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -6758,44 +6758,35 @@ button.close {
 
 #cf {
     position: relative;
-    height: 281px;
-    width: 450px;
+    width: auto;
+    min-height: 85px;
     margin: 20px auto;
 }
 
 #cf img {
     position: absolute;
     left: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
 }
 
-#cf img {
-    animation-name: fadein;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-duration: 6s;
-    animation-direction: normal;
-}
-
-#cf img:nth-of-type(1) {
-    animation-delay: 4s;
-}
-
-#cf img:nth-of-type(2) {
-    animation-delay: 2s;
-}
-
-#cf img:nth-of-type(3) {
-    animation-delay: 0s;
-}
+.img1 { -webkit-animation: fadein 6s; }
+.img2 { -webkit-animation: fadein 6s 2s; }
+.img3 { -webkit-animation: fadein2 6s 4s; -webkit-animation-fill-mode: forwards; }
 
 @keyframes fadein {
     0% {opacity: 1; }
     25% {opacity: 1; }
-    50% {opacity: 0; }
+    50% {opacity: 1; }
     75% {opacity: 0; }
     100% {opacity: 0; }
+}
+
+@keyframes fadein2 {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    100% { opacity: 1; }
 }
