@@ -4,6 +4,11 @@
     font-family: "ZCOOL QingKe HuangYou", cursive;
     font-stretch: ultra-expanded;
     font-size: 18px;
+    background-image: url('../img/bkgCircuit_20opacity.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
 }
 
 /* Set padding to keep content from hitting the edges */
