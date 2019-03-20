@@ -51,3 +51,27 @@ h1, h2, h3, h4, h5, h6,
     height: auto;
     display: inline-block;
 }
+
+.img-sticky {
+    margin-top: 100px;
+    position: fixed;
+    top: 0;
+    border: 2px solid black;
+}
+
+.img-p-hover {
+    visibility: hidden;
+}
+
+#stat:hover, #stat-int:hover, #stat-str:hover, #stat-card:hover, #stat-aff:hover {
+    opacity: 1;
+}
+
+p:hover {
+    color: white;
+    background-color: #31708f;
+}
+
+#stat, #stat-int, #stat-str, #stat-card, #stat-aff {
+    opacity: .5;
+}
