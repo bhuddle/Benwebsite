@@ -2,6 +2,29 @@
     ViewBag.Title = "Stats";
 }
 
+<script type="text/javascript">
+    function chest_hover() {
+        element = document.getElementById("BodyImage");
+        element.setAttribute('src', '../../img/body_edits_chest.jpg');
+    }
+    function leg_hover() {
+        element = document.getElementById("BodyImage");
+        element.setAttribute('src', '../../img/body_edits_leg.jpg');
+    }
+    function back_hover() {
+        element = document.getElementById("BodyImage");
+        element.setAttribute('src', '../../img/body_edits_back.jpg');
+    }
+    function shldr_hover() {
+        element = document.getElementById("BodyImage");
+        element.setAttribute('src', '../../img/body_edits_shldr.jpg');
+    }
+    function unhover() {
+        element = document.getElementById("BodyImage");
+        element.setAttribute('src', '../../img/body_edits.jpg');
+    }
+</script>
+
 <div class="row">
     <div class="col-md-4">
         <div class="row" id="stat">
@@ -22,10 +45,18 @@
         </div>
         <div class="row" id="stat-str">
             <h2>Strength</h2>
-            <p>Bench: 225 lbs</p>
-            <p>Squat: 295 lbs</p>
-            <p>Deadlift: 225 lbs</p>
-            <p>Overhead Press: 135 lbs</p>
+            <p onmouseover="chest_hover();" onmouseout="unhover();">
+                Bench: 225 lbs
+            </p>
+            <p onmouseover="leg_hover();" onmouseout="unhover();">
+                Squat: 295 lbs
+            </p>
+            <p onmouseover="back_hover();" onmouseout="unhover();">
+                Deadlift: 225 lbs
+            </p>
+            <p onmouseover="shldr_hover();" onmouseout="unhover();">
+                Overhead Press: 135 lbs
+            </p>
             <hr />
         </div>
         <div class="row" id="stat-card">
@@ -42,7 +73,6 @@
     </div>
     <div class="col-md-6">
         <!--Temp pic, replace with body, highlight brain, muscle on hover-->
-        <img class="img-sticky" src="~/img/body_edits.jpg" />
-        <img class="img-sticky img-p-hover" src="~/img/body_edits_chest.jpg" />
+        <img id="BodyImage" class="img-sticky" src="~/img/body_edits.jpg" />
     </div>
 </div>
