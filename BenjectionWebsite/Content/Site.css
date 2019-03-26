@@ -110,3 +110,14 @@ h1, h2, h3, h4, h5, h6,
     border: .5px solid black;
     background-color: #31708f;
 }
+
+.btn-default {
+    background-color: #31708f;
+    color: white;
+    font-size: 18px;
+}
+
+.btn:hover {
+    color: black;
+    font-size: 18px;
+}

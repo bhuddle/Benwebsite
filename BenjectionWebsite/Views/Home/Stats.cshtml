@@ -19,6 +19,10 @@
         element = document.getElementById("BodyImage");
         element.setAttribute('src', '../../img/body_edits_shldr.jpg');
     }
+    function brain_bad_hover() {
+        element = document.getElementById("BodyImage");
+        element.setAttribute('src', '../../img/body_edits_brain_bad.jpg');
+    }
     function unhover() {
         element = document.getElementById("BodyImage");
         element.setAttribute('src', '../../img/body_edits.jpg');
@@ -67,8 +71,12 @@
         <div class="row" id="stat-aff">
             <h2>Afflictions</h2>
             <p>Poor vision</p>
-            <p>Viral Meningitis</p>
-            <p>Forgetful</p>
+            <p onmouseover="brain_bad_hover();" onmouseout="unhover();">
+                Viral Meningitis
+            </p>
+            <p onmouseover="brain_bad_hover();" onmouseout="unhover();">
+                Forgetful
+            </p>
         </div>
     </div>
     <div class="col-md-6">
