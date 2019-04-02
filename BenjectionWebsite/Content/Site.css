@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6,
 
 .carousel-indicators {
     top: 10px;
+    height: 10%;
     align-content: center;
 }
 
@@ -97,7 +98,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .carousel-content h3 {
-    position: absolute;
+    position: fixed;
     margin-left: 15%;
     margin-top: 2%;
     z-index: 20;
@@ -111,7 +112,8 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .carousel-content p {
-    position: absolute;
+    position: fixed;
+    margin: auto;
     margin-left: 15%;
     margin-top: 3%;
     padding-top: 2%;

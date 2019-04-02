@@ -15,15 +15,32 @@ namespace BenjectionWebsite.Controllers
 
         public ActionResult Stats()
         {
-            
-
             return View();
         }
 
         public ActionResult Contact()
         {
-            //ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "The best place to get ahold of me.";
+            return View();
+        }
 
+        public ActionResult Blog()
+        {
+            return View();
+        }
+
+        public ActionResult Complaints()
+        {
+            return View();
+        }
+
+        public ActionResult RnR()
+        {
+            return View();
+        }
+
+        public ActionResult WOW()
+        {
             return View();
         }
     }
