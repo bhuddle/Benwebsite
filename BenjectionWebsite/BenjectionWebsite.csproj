@@ -170,7 +170,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\Home\RnR.cshtml" />
-    <Content Include="Views\Home\Complaints.cshtml" />
+    <Content Include="Views\Home\Cheddar.cshtml" />
     <Content Include="Views\Home\WOW.cshtml" />
   </ItemGroup>
   <ItemGroup>

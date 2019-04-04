@@ -29,7 +29,7 @@ namespace BenjectionWebsite.Controllers
             return View();
         }
 
-        public ActionResult Complaints()
+        public ActionResult Cheddar()
         {
             return View();
         }
